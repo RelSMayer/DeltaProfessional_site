@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DELTA — engineering R&D and the DELTA CNC control platform for automated sewing and embroidery systems." />
+  <title>DELTA — Engineering R&D / DELTA CNC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="DELTA home">
+        <span class="brand-mark">Δ</span>
+        <span>DELTA</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#product">DELTA CNC</a>
+        <a href="#rnd">R&D</a>
+        <a href="#work">Projects</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <a class="btn btn-small btn-outline" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span> ENGINEERING R&D / MOTION CONTROL</div>
+
+          <h1>
+            Engineering systems that move
+            <span class="accent">from idea to working hardware.</span>
+          </h1>
+
+          <p class="hero-lead">
+            DELTA develops embedded electronics, motion-control systems and industrial software.
+            Our flagship product is <strong>DELTA CNC</strong> — a control platform for automated
+            sewing and embroidery equipment.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#product">Explore DELTA CNC</a>
+            <a class="btn btn-ghost" href="#rnd">R&D services <span>→</span></a>
+          </div>
+
+          <div class="hero-meta">
+            <div><strong>Embedded</strong><span>STM32 / real-time control</span></div>
+            <div><strong>Motion</strong><span>Planning / STEP-DIR / safety</span></div>
+            <div><strong>System</strong><span>Electronics / Linux / UI</span></div>
+          </div>
+        </div>
+
+        <div class="system-card" aria-label="DELTA CNC system architecture">
+          <div class="system-card-head">
+            <span>DELTA CNC / SYSTEM PATH</span>
+            <span class="status"><i></i> ACTIVE R&D</span>
+          </div>
+
+          <div class="architecture">
+            <div class="node node-main">
+              <span class="node-tag">HMI</span>
+              <strong>Operator Interface</strong>
+              <small>Raspberry Pi / Avalonia</small>
+            </div>
+
+            <div class="flow">
+              <span></span><b>SPI V2</b><span></span>
+            </div>
+
+            <div class="node">
+              <span class="node-tag">CONTROL</span>
+              <strong>STM32 Controller</strong>
+              <small>Real-time execution & safety</small>
+            </div>
+
+            <div class="flow">
+              <span></span><b>Motion</b><span></span>
+            </div>
+
+            <div class="node">
+              <span class="node-tag">REAL-TIME</span>
+              <strong>Planner → Scheduler</strong>
+              <small>Profiles / deterministic STEP</small>
+            </div>
+
+            <div class="flow">
+              <span></span><b>STEP / DIR</b><span></span>
+            </div>
+
+            <div class="node node-machine">
+              <span class="node-tag">MACHINE</span>
+              <strong>XY Mechanics</strong>
+              <small>Synchronized with sewing head</small>
+            </div>
+          </div>
+
+          <div class="system-footer">
+            <span>HW</span><span>FW</span><span>LINUX</span><span>UI</span><span>MOTION</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product" id="product">
+      <div class="wrap">
+        <div class="section-kicker">01 / FLAGSHIP PRODUCT</div>
+
+        <div class="product-grid">
+          <div class="product-copy">
+            <h2>DELTA CNC</h2>
+            <p class="section-lead">
+              A complete motion and control platform for automated sewing and embroidery systems.
+              Designed as one integrated stack — from operator interface to the physical XY motion.
+            </p>
+
+            <div class="feature-list">
+              <div>
+                <span>01</span>
+                <p><strong>Deterministic motion control</strong>Motion planning, scheduling and STEP/DIR generation.</p>
+              </div>
+              <div>
+                <span>02</span>
+                <p><strong>Needle-aware safety</strong>XY movement is coordinated with the sewing-head phase.</p>
+              </div>
+              <div>
+                <span>03</span>
+                <p><strong>Integrated HMI</strong>Raspberry Pi operator interface connected to the real-time controller.</p>
+              </div>
+              <div>
+                <span>04</span>
+                <p><strong>Built for real machinery</strong>Architecture developed around actual mechanics, sensors and drivers.</p>
+              </div>
+            </div>
+
+            <a class="text-link" href="#contact">DELTA CNC product page — coming next <span>→</span></a>
+          </div>
+
+          <div class="product-panel">
+            <div class="panel-label">CURRENT DEVELOPMENT STATUS</div>
+            <div class="big-number">CNC</div>
+            <div class="panel-lines">
+              <div><span>Motion stack</span><b>Implemented</b></div>
+              <div><span>STM32 control</span><b>Implemented</b></div>
+              <div><span>Raspberry Pi HMI</span><b>Implemented</b></div>
+              <div><span>Hardware integration</span><b>In validation</b></div>
+              <div><span>Production readiness</span><b class="warm">In development</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rnd" id="rnd">
+      <div class="wrap">
+        <div class="section-kicker">02 / R&D SERVICES</div>
+        <div class="section-heading">
+          <h2>Engineering beyond a single product.</h2>
+          <p>
+            DELTA can enter a project at concept, prototype, integration or troubleshooting stage —
+            and work across the full hardware/software path.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-id">R&D 01</div>
+            <h3>Embedded Systems</h3>
+            <p>STM32 firmware, real-time control, communication protocols, diagnostics and safety logic.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-id">R&D 02</div>
+            <h3>Electronics & PCB</h3>
+            <p>Architecture, schematics, PCB development, prototyping and hardware integration.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-id">R&D 03</div>
+            <h3>Motion & Automation</h3>
+            <p>Stepper systems, planners, schedulers, machine synchronization and industrial control.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-id">R&D 04</div>
+            <h3>Reverse Engineering</h3>
+            <p>Unknown systems, legacy equipment, interfaces, protocol analysis and functional replacement.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-id">R&D 05</div>
+            <h3>System Integration</h3>
+            <p>Linux, Raspberry Pi, UI, embedded controllers, communications and complete system bring-up.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-id">R&D 06</div>
+            <h3>Engineering Consulting</h3>
+            <p>Architecture review, feasibility analysis, technical risk assessment and R&D planning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="wrap">
+        <div class="section-kicker">03 / PROVEN WORK</div>
+        <div class="section-heading">
+          <h2>Qualification should be demonstrated, not declared.</h2>
+          <p>
+            This section will become the evidence base: selected engineering projects, prototypes,
+            test results and sanitized case studies.
+          </p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case case-featured">
+            <div class="case-top">
+              <span>CASE / 001</span><span>OWN PRODUCT</span>
+            </div>
+            <div>
+              <h3>DELTA CNC</h3>
+              <p>Full-stack CNC control system: UI → SPI → STM32 → Motion → XY mechanics.</p>
+            </div>
+            <div class="case-tags"><span>Embedded</span><span>Motion</span><span>Linux</span><span>Hardware</span></div>
+          </article>
+
+          <article class="case">
+            <div class="case-top">
+              <span>CASE / 002</span><span>SELECTED R&D</span>
+            </div>
+            <div>
+              <h3>Legacy system modernization</h3>
+              <p>Public case study placeholder. We will publish only information that can be safely disclosed.</p>
+            </div>
+            <div class="case-tags"><span>Diagnostics</span><span>Integration</span></div>
+          </article>
+
+          <article class="case">
+            <div class="case-top">
+              <span>CASE / 003</span><span>SELECTED R&D</span>
+            </div>
+            <div>
+              <h3>Distributed control reverse engineering</h3>
+              <p>Public case study placeholder for protocol analysis, hardware research and functional replacement.</p>
+            </div>
+            <div class="case-tags"><span>CAN</span><span>Reverse Engineering</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <div class="section-kicker">04 / DELTA</div>
+          <h2>Product development and client R&D under one engineering discipline.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            We do not separate electronics, firmware, software and mechanics into isolated tasks.
+            The system is treated as one engineering path, with interfaces and failure modes considered end to end.
+          </p>
+          <p class="muted">
+            This page is the first public structure draft. Company history, team information,
+            equipment and validated achievements will be added only when they strengthen the evidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-inner">
+        <div>
+          <div class="section-kicker">05 / CONTACT</div>
+          <h2>Have a product, prototype or difficult engineering problem?</h2>
+        </div>
+        <div class="contact-action">
+          <p>Discuss an R&D task, DELTA CNC integration or engineering consultation.</p>
+          <a class="btn btn-primary" href="mailto:contact@deltaprof.com">contact@deltaprof.com</a>
+          <small>Placeholder address — configure after mail setup.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top"><span class="brand-mark">Δ</span><span>DELTA</span></a>
+      <span>Engineering R&D / DELTA CNC</span>
+      <span>© 2026 DELTA</span>
+    </div>
+  </footer>
+</body>
+</html>
