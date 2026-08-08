@@ -3,26 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="DELTA — інженерний R&D та платформа керування DELTA CNC для автоматизованих швейних і вишивальних систем." />
-  <title>DELTA — Інженерний R&D / DELTA CNC</title>
+  <meta name="description" content="DELTA CNC — нове покоління вишивальної системи DELTA Professional. Сучасна електроніка, motion control та програмне забезпечення." />
+  <title>DELTA CNC — нове покоління DELTA Professional</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Головна DELTA">
-        <span class="brand-mark">Δ</span>
-        <span>DELTA</span>
-      </a>
-
+      <a class="brand" href="/" aria-label="Головна DELTA"><span class="brand-mark">Δ</span><span>DELTA</span></a>
       <nav class="nav-links" aria-label="Основна навігація">
-        <a href="#product">DELTA CNC</a>
-        <a href="#rnd">R&D</a>
-        <a href="#work">Проєкти</a>
-        <a href="#about">Про DELTA</a>
+        <a class="active" href="/">DELTA CNC</a>
+        <a href="/rnd/">R&D</a>
+        <a href="/support/">Підтримка</a>
+        <a href="#history">Історія</a>
       </nav>
-
       <a class="btn btn-small btn-outline" href="#contact">Контакти</a>
+      <details class="mobile-nav"><summary>Меню</summary><div><a href="/">DELTA CNC</a><a href="/rnd/">R&D</a><a href="/support/">Підтримка</a><a href="#history">Історія</a></div></details>
     </div>
   </header>
 
@@ -31,269 +27,86 @@
       <div class="hero-grid"></div>
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="dot"></span> ІНЖЕНЕРНИЙ R&D / КЕРУВАННЯ РУХОМ</div>
-
-          <h1>
-            Інженерні системи, що проходять шлях
-            <span class="accent">від ідеї до працюючого обладнання.</span>
-          </h1>
-
-          <p class="hero-lead">
-            DELTA розробляє вбудовану електроніку, системи керування рухом та промислове програмне забезпечення.
-            Наш флагманський продукт — <strong>DELTA CNC</strong>, платформа керування для автоматизованого
-            швейного та вишивального обладнання.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#product">Детальніше про DELTA CNC</a>
-            <a class="btn btn-ghost" href="#rnd">R&D послуги <span>→</span></a>
-          </div>
-
-          <div class="hero-meta">
-            <div><strong>Embedded</strong><span>STM32 / керування в реальному часі</span></div>
-            <div><strong>Motion</strong><span>Планування / STEP-DIR / безпека</span></div>
-            <div><strong>System</strong><span>Електроніка / Linux / UI</span></div>
-          </div>
+          <div class="eyebrow"><span class="dot"></span> DELTA PROFESSIONAL / НОВЕ ПОКОЛІННЯ</div>
+          <h1>DELTA CNC <span class="accent">сучасна система керування вишивальним обладнанням.</span></h1>
+          <p class="hero-lead">Нове покоління DELTA Professional: сучасна електроніка, керування рухом, інтерфейс оператора та єдиний програмно-апаратний тракт для автоматизованого швейного і вишивального обладнання.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#product">Що таке DELTA CNC</a><a class="btn btn-ghost" href="/support/#upgrade">Модернізація старої DELTA <span>→</span></a></div>
+          <div class="hero-meta"><div><strong>1995+</strong><span>історія DELTA Professional</span></div><div><strong>6000+</strong><span>систем встановлено в Україні</span></div><div><strong>NEW GEN</strong><span>нова електроніка / UI / motion</span></div></div>
         </div>
 
-        <div class="system-card" aria-label="Архітектура системи DELTA CNC">
-          <div class="system-card-head">
-            <span>DELTA CNC / СИСТЕМНИЙ ТРАКТ</span>
-            <span class="status"><i></i> АКТИВНИЙ R&D</span>
-          </div>
-
+        <div class="system-card" aria-label="Архітектура DELTA CNC">
+          <div class="system-card-head"><span>DELTA CNC / SYSTEM PATH</span><span class="status"><i></i> ACTIVE R&D</span></div>
           <div class="architecture">
-            <div class="node node-main">
-              <span class="node-tag">HMI</span>
-              <strong>Інтерфейс оператора</strong>
-              <small>Raspberry Pi / Avalonia</small>
-            </div>
-
-            <div class="flow">
-              <span></span><b>SPI V2</b><span></span>
-            </div>
-
-            <div class="node">
-              <span class="node-tag">КЕРУВАННЯ</span>
-              <strong>Контролер STM32</strong>
-              <small>Виконання в реальному часі та safety-логіка</small>
-            </div>
-
-            <div class="flow">
-              <span></span><b>Motion</b><span></span>
-            </div>
-
-            <div class="node">
-              <span class="node-tag">REAL-TIME</span>
-              <strong>Planner → Scheduler</strong>
-              <small>Профілі / детермінований STEP</small>
-            </div>
-
-            <div class="flow">
-              <span></span><b>STEP / DIR</b><span></span>
-            </div>
-
-            <div class="node node-machine">
-              <span class="node-tag">МЕХАНІКА</span>
-              <strong>XY-механіка</strong>
-              <small>Синхронізація з швейною головою</small>
-            </div>
+            <div class="node node-main"><span class="node-tag">HMI</span><strong>Інтерфейс оператора</strong><small>Raspberry Pi / Avalonia</small></div>
+            <div class="flow"><span></span><b>SPI V2</b><span></span></div>
+            <div class="node"><span class="node-tag">CONTROL</span><strong>STM32 Controller</strong><small>Real-time execution & safety</small></div>
+            <div class="flow"><span></span><b>MOTION</b><span></span></div>
+            <div class="node"><span class="node-tag">REAL-TIME</span><strong>Planner → Scheduler</strong><small>Профілі / deterministic STEP</small></div>
+            <div class="flow"><span></span><b>STEP / DIR</b><span></span></div>
+            <div class="node node-machine"><span class="node-tag">MACHINE</span><strong>XY-механіка</strong><small>Синхронізація зі швейною головою</small></div>
           </div>
-
-          <div class="system-footer">
-            <span>HW</span><span>FW</span><span>LINUX</span><span>UI</span><span>MOTION</span>
-          </div>
+          <div class="system-footer"><span>HW</span><span>FW</span><span>LINUX</span><span>UI</span><span>MOTION</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section product" id="product">
+    <section class="section" id="product">
       <div class="wrap">
-        <div class="section-kicker">01 / ФЛАГМАНСЬКИЙ ПРОДУКТ</div>
-
+        <div class="section-kicker">01 / DELTA CNC</div>
         <div class="product-grid">
           <div class="product-copy">
-            <h2>DELTA CNC</h2>
-            <p class="section-lead">
-              Комплексна платформа керування рухом для автоматизованих швейних і вишивальних систем.
-              Розроблена як єдиний тракт — від інтерфейсу оператора до фізичного переміщення XY-механіки.
-            </p>
-
+            <h2>Від оператора до механіки — одна система.</h2>
+            <p class="section-lead">DELTA CNC розробляється не як окремий контролер, а як повний тракт керування обладнанням: UI → зв'язок → real-time controller → motion → XY-механіка.</p>
             <div class="feature-list">
-              <div>
-                <span>01</span>
-                <p><strong>Детерміноване керування рухом</strong>Планування траєкторії, планувальник та генерація STEP/DIR.</p>
-              </div>
-              <div>
-                <span>02</span>
-                <p><strong>Безпека з урахуванням фази голки</strong>Рух XY координується з фазою роботи швейної голови.</p>
-              </div>
-              <div>
-                <span>03</span>
-                <p><strong>Інтегрований HMI</strong>Інтерфейс оператора на Raspberry Pi з'єднаний із real-time контролером.</p>
-              </div>
-              <div>
-                <span>04</span>
-                <p><strong>Розроблено для реальної механіки</strong>Архітектура створюється навколо реальних приводів, датчиків та виконавчих вузлів.</p>
-              </div>
-            </div>
-
-            <a class="text-link" href="#contact">Окрема сторінка DELTA CNC — наступний етап <span>→</span></a>
-          </div>
-
-          <div class="product-panel">
-            <div class="panel-label">ПОТОЧНИЙ СТАН РОЗРОБКИ</div>
-            <div class="big-number">CNC</div>
-            <div class="panel-lines">
-              <div><span>Motion stack</span><b>Реалізовано</b></div>
-              <div><span>Керування STM32</span><b>Реалізовано</b></div>
-              <div><span>Raspberry Pi HMI</span><b>Реалізовано</b></div>
-              <div><span>Інтеграція з обладнанням</span><b>Валідація</b></div>
-              <div><span>Готовність до виробництва</span><b class="warm">У розробці</b></div>
+              <div><span>01</span><p><strong>Сучасна електроніка</strong>Нова апаратна платформа керування та діагностики.</p></div>
+              <div><span>02</span><p><strong>Детермінований motion control</strong>Планування руху, профілі, scheduler та STEP/DIR.</p></div>
+              <div><span>03</span><p><strong>Безпека з урахуванням голки</strong>Рух XY виконується з урахуванням фази та безпечного вікна швейної голови.</p></div>
+              <div><span>04</span><p><strong>Сучасний HMI</strong>Raspberry Pi та новий інтерфейс оператора замість legacy-підходу.</p></div>
             </div>
           </div>
+          <div class="product-panel"><div class="panel-label">АРХІТЕКТУРНИЙ СТАТУС / V1</div><div class="big-number">CNC</div><div class="panel-lines"><div><span>Motion stack</span><b>Реалізовано</b></div><div><span>STM32 control</span><b>Реалізовано</b></div><div><span>Raspberry Pi HMI</span><b>Реалізовано</b></div><div><span>Hardware integration</span><b>Валідація</b></div><div><span>Production readiness</span><b class="warm">У розробці</b></div></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section rnd" id="rnd">
+    <section class="section" id="history">
       <div class="wrap">
-        <div class="section-kicker">02 / R&D ПОСЛУГИ</div>
-        <div class="section-heading">
-          <h2>Інженерна робота, що виходить за межі одного продукту.</h2>
-          <p>
-            DELTA може підключатися до проєкту на етапі концепції, прототипування, інтеграції або пошуку несправностей
-            і працювати з усім апаратно-програмним трактом.
-          </p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-id">R&D 01</div>
-            <h3>Вбудовані системи</h3>
-            <p>Прошивки STM32, керування в реальному часі, протоколи обміну, діагностика та safety-логіка.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-id">R&D 02</div>
-            <h3>Електроніка та PCB</h3>
-            <p>Архітектура, принципові схеми, розробка друкованих плат, прототипування та апаратна інтеграція.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-id">R&D 03</div>
-            <h3>Рух та автоматизація</h3>
-            <p>Крокові приводи, планувальники, scheduler-и, синхронізація механіки та промислове керування.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-id">R&D 04</div>
-            <h3>Reverse Engineering</h3>
-            <p>Дослідження невідомих і legacy-систем, інтерфейсів, протоколів та розробка функціональної заміни.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-id">R&D 05</div>
-            <h3>Системна інтеграція</h3>
-            <p>Linux, Raspberry Pi, UI, вбудовані контролери, комунікації та комплексний запуск системи.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-id">R&D 06</div>
-            <h3>Інженерний консалтинг</h3>
-            <p>Аналіз архітектури, оцінка реалізованості, технічних ризиків та планування R&D.</p>
-          </article>
+        <div class="section-kicker">02 / ІСТОРІЯ DELTA PROFESSIONAL</div>
+        <div class="section-heading"><h2>Нове покоління має власну історію.</h2><p>DELTA CNC продовжує розвиток систем DELTA Professional, які десятиліттями працювали на українських виробництвах. Детальну історію та архівні матеріали додамо окремими ітераціями.</p></div>
+        <div class="history-strip">
+          <div class="history-step"><span>1995</span><strong>Початок розвитку</strong><small>Вишивальне обладнання DELTA Professional в Україні.</small></div>
+          <div class="history-step"><span>6000+</span><strong>Встановлені системи</strong><small>Понад 6000 систем DELTA Professional реалізовано в Україні.</small></div>
+          <div class="history-step"><span>LEGACY</span><strong>Роки експлуатації</strong><small>Власники досі використовують старі системи, ПЗ та документацію.</small></div>
+          <div class="history-step"><span>NEW GEN</span><strong>DELTA CNC</strong><small>Сучасна електроніка, UI та motion architecture.</small></div>
         </div>
       </div>
     </section>
 
-    <section class="section work" id="work">
+    <section class="section">
       <div class="wrap">
-        <div class="section-kicker">03 / ПІДТВЕРДЖЕНІ РЕЗУЛЬТАТИ</div>
-        <div class="section-heading">
-          <h2>Кваліфікацію потрібно демонструвати, а не декларувати.</h2>
-          <p>
-            Цей розділ стане доказовою базою: обрані інженерні проєкти, прототипи,
-            результати випробувань та case studies з інформацією, яку можна публічно розкривати.
-          </p>
-        </div>
-
-        <div class="case-grid">
-          <article class="case case-featured">
-            <div class="case-top">
-              <span>КЕЙС / 001</span><span>ВЛАСНИЙ ПРОДУКТ</span>
-            </div>
-            <div>
-              <h3>DELTA CNC</h3>
-              <p>Повний тракт CNC-керування: UI → SPI → STM32 → Motion → XY-механіка.</p>
-            </div>
-            <div class="case-tags"><span>Embedded</span><span>Motion</span><span>Linux</span><span>Hardware</span></div>
-          </article>
-
-          <article class="case">
-            <div class="case-top">
-              <span>КЕЙС / 002</span><span>ОБРАНИЙ R&D</span>
-            </div>
-            <div>
-              <h3>Модернізація legacy-системи</h3>
-              <p>Місце для публічного кейсу. Публікуватиметься лише інформація, яку можна безпечно розкривати.</p>
-            </div>
-            <div class="case-tags"><span>Діагностика</span><span>Інтеграція</span></div>
-          </article>
-
-          <article class="case">
-            <div class="case-top">
-              <span>КЕЙС / 003</span><span>ОБРАНИЙ R&D</span>
-            </div>
-            <div>
-              <h3>Reverse engineering розподіленої системи керування</h3>
-              <p>Місце для публічного кейсу з аналізу протоколів, дослідження апаратної частини та функціональної заміни.</p>
-            </div>
-            <div class="case-tags"><span>CAN</span><span>Reverse Engineering</span></div>
-          </article>
+        <div class="section-kicker">03 / ТРИ НАПРЯМИ САЙТУ</div>
+        <div class="section-heading"><h2>Продукт, інженерія та підтримка — окремо.</h2><p>Architecture v1 навмисно розділяє різні аудиторії. Кожну сторінку будемо розвивати поетапно, не намагаючись завершити все одним великим rewrite.</p></div>
+        <div class="route-grid">
+          <a class="route-card accent-card" href="/"><span>PRODUCT</span><h3>DELTA CNC</h3><p>Новий продукт, можливості, архітектура, історія та розвиток.</p></a>
+          <a class="route-card" href="/rnd/"><span>ENGINEERING</span><h3>DELTA R&D</h3><p>Embedded, electronics, motion, reverse engineering, integration та consulting.</p></a>
+          <a class="route-card" href="/support/"><span>LEGACY / SUPPORT</span><h3>Підтримка</h3><p>Delta_Card, Browser_EMB, документація та модернізація старих систем.</p></a>
         </div>
       </div>
     </section>
 
-    <section class="section about" id="about">
-      <div class="wrap about-grid">
-        <div>
-          <div class="section-kicker">04 / DELTA</div>
-          <h2>Власні продукти та клієнтський R&D в межах єдиного інженерного підходу.</h2>
-        </div>
-        <div class="about-copy">
-          <p>
-            Ми не розглядаємо електроніку, firmware, software та механіку як ізольовані задачі.
-            Система аналізується як єдиний інженерний тракт — з урахуванням інтерфейсів, взаємодії вузлів і можливих відмов від початку до кінця.
-          </p>
-          <p class="muted">
-            Це перша публічна версія структури сайту. Історія, команда, обладнання та підтверджені досягнення
-            будуть додаватися лише тоді, коли вони посилюють доказову базу.
-          </p>
-        </div>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-kicker">04 / DELTA CNC UPGRADE</div>
+        <div class="section-heading"><h2>Стару механіку не обов'язково списувати.</h2><p>Для DELTA Professional з придатною механічною базою, особливо на алюмінієвому профілі, планується модернізація: зберегти механіку та встановити нове покоління електроніки і керування.</p></div>
+        <a class="text-link" href="/support/#upgrade">Перейти до модернізації DELTA Professional <span>→</span></a>
       </div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="wrap contact-inner">
-        <div>
-          <div class="section-kicker">05 / КОНТАКТИ</div>
-          <h2>Є продукт, прототип або складна інженерна задача?</h2>
-        </div>
-        <div class="contact-action">
-          <p>Обговоримо R&D-задачу, інтеграцію DELTA CNC або інженерну консультацію.</p>
-          <a class="btn btn-primary" href="mailto:delta.professional.em@gmail.com">delta.professional.em@gmail.com</a>
-        </div>
-      </div>
+      <div class="wrap contact-inner"><div><div class="section-kicker">05 / КОНТАКТИ</div><h2>DELTA CNC, модернізація або R&D-задача.</h2></div><div class="contact-action"><p>Напишіть, що саме вас цікавить — нова система, модернізація старої DELTA Professional або інженерна розробка.</p><a class="btn btn-primary" href="mailto:delta.professional.em@gmail.com">delta.professional.em@gmail.com</a></div></div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footer-inner">
-      <a class="brand" href="#top"><span class="brand-mark">Δ</span><span>DELTA</span></a>
-      <span>Інженерний R&D / DELTA CNC</span>
-      <span>© 2026 DELTA</span>
-    </div>
-  </footer>
+  <footer><div class="wrap footer-inner"><a class="brand" href="/"><span class="brand-mark">Δ</span><span>DELTA</span></a><span>DELTA Professional / DELTA CNC</span><span>© 2026 DELTA</span></div></footer>
 </body>
 </html>
