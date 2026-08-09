@@ -26,7 +26,7 @@
 .integration-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 54px; align-items: center; }
 .integration-figure { margin: 0; border: 1px solid var(--line-bright); background: #06090c; overflow: hidden; }
 .integration-figure img { display: block; width: 100%; height: auto; }
-.integration-figure figcaption { padding: 14px 16px 16px; border-top: 1px solid var(--line); color: #6f7f8a; font-size: 12px; }
+.integration-figure figcaption { display: none; }
 .integration-copy h2 { font-size: clamp(38px, 4vw, 58px); line-height: 1.04; letter-spacing: -.045em; }
 .integration-copy > p:not(.section-lead) { color: #95a4ae; }
 .component-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 52px; }
