@@ -6,137 +6,19 @@
   <meta name="description" content="DELTA R&D — embedded systems, електроніка, motion control, reverse engineering, Linux/Raspberry Pi та системна інтеграція від архітектури до працюючого прототипу." />
   <title>DELTA R&D — інженерні розробки</title>
   <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="../site-v2.css?v=20260809-5" />
+  <link rel="stylesheet" href="../site-v2.css?v=20260809-6" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap nav">
-      <a class="brand" href="/" aria-label="Головна DELTA"><span class="brand-mark">Δ</span><span>DELTA</span></a>
-      <nav class="nav-links" aria-label="Основна навігація">
-        <a href="/">DELTA CNC</a><a class="active" href="/rnd/">R&D</a><a href="/support/">Підтримка</a><a href="/about/">Про нас</a><a href="/delivery/">Доставка</a>
-      </nav>
-      <a class="btn btn-small btn-outline" href="#contact">Контакти</a>
-      <details class="mobile-nav"><summary>Меню</summary><div><a href="/">DELTA CNC</a><a href="/rnd/">R&D</a><a href="/support/">Підтримка</a><a href="/about/">Про нас</a><a href="/delivery/">Доставка</a></div></details>
-    </div>
-  </header>
-
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="/" aria-label="Головна DELTA"><span class="brand-mark">Δ</span><span>DELTA</span></a><nav class="nav-links" aria-label="Основна навігація"><a href="/">DELTA CNC</a><a class="active" href="/rnd/">R&D</a><a href="/support/">Підтримка</a><a href="/about/">Про нас</a><a href="/delivery/">Доставка</a></nav><a class="btn btn-small btn-outline" href="#contact">Контакти</a><details class="mobile-nav"><summary>Меню</summary><div><a href="/">DELTA CNC</a><a href="/rnd/">R&D</a><a href="/support/">Підтримка</a><a href="/about/">Про нас</a><a href="/delivery/">Доставка</a></div></details></div></header>
   <main>
-    <section class="page-hero">
-      <div class="hero-grid"></div>
-      <div class="wrap page-hero-inner">
-        <div>
-          <div class="eyebrow"><span class="dot"></span> DELTA / ENGINEERING R&D</div>
-          <h1>Складні інженерні задачі <span class="accent">від архітектури до працюючої системи.</span></h1>
-          <p class="hero-lead">DELTA R&D працює з embedded firmware, електронікою, motion control, Linux/Raspberry Pi, механікою та інтеграцією обладнання як з частинами одного продукту.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#services">Напрями роботи</a><a class="btn btn-ghost" href="#contact">Обговорити задачу <span>→</span></a></div>
-        </div>
-        <div class="system-card compact-card">
-          <div class="system-card-head"><span>R&D / SYSTEM APPROACH</span><span class="status"><i></i> ACTIVE</span></div>
-          <div class="architecture">
-            <div class="node node-main"><span class="node-tag">01</span><strong>Задача та обмеження</strong><small>Вимоги / ризики / невідомі</small></div>
-            <div class="flow"><span></span><b>ARCHITECTURE</b><span></span></div>
-            <div class="node"><span class="node-tag">02</span><strong>Hardware + Firmware + Software</strong><small>Розробка як єдиної системи</small></div>
-            <div class="flow"><span></span><b>BRING-UP / TEST</b><span></span></div>
-            <div class="node node-machine"><span class="node-tag">03</span><strong>Працюючий прототип</strong><small>Інтеграція / вимірювання / валідація</small></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="wrap">
-        <div class="section-kicker">01 / НАПРЯМИ R&D</div>
-        <div class="section-heading"><h2>Повний інженерний тракт, а не окремі технології.</h2><p>Задача розглядається на рівні всієї системи: від вимог, механіки та електроніки до firmware, software, протоколів зв'язку, діагностики й перевірки на реальному обладнанні.</p></div>
-        <div class="cards">
-          <article class="card"><div class="card-id">R&D 01</div><h3>Embedded Systems</h3><p>STM32, real-time control, протоколи, DMA/IRQ, діагностика та safety-логіка.</p></article>
-          <article class="card"><div class="card-id">R&D 02</div><h3>Electronics & PCB</h3><p>Архітектура електроніки, схеми, PCB, прототипування та hardware bring-up.</p></article>
-          <article class="card"><div class="card-id">R&D 03</div><h3>Motion & Automation</h3><p>Крокові приводи, planners, schedulers, синхронізація та керування механікою.</p></article>
-          <article class="card"><div class="card-id">R&D 04</div><h3>Reverse Engineering</h3><p>Legacy-системи, невідомі протоколи, діагностика та розробка функціональної заміни.</p></article>
-          <article class="card"><div class="card-id">R&D 05</div><h3>System Integration</h3><p>Linux, Raspberry Pi, UI, embedded-контролери, інтерфейси та запуск системи як єдиного виробу.</p></article>
-          <article class="card"><div class="card-id">R&D 06</div><h3>Engineering Consulting</h3><p>Feasibility, architecture review, технічні ризики, декомпозиція та планування R&D.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section evidence-section" id="approach">
-      <div class="wrap">
-        <div class="section-kicker">02 / ПІДХІД</div>
-        <div class="section-heading"><h2>Результат — не код або плата окремо, а система, що працює.</h2><p>Hardware, firmware, software та механічна частина перевіряються разом. Це дозволяє знаходити проблеми на межах модулів, де найчастіше виникають помилки інтеграції.</p></div>
-        <div class="history-strip">
-          <div class="history-step"><span>01 / DEFINE</span><strong>Зрозуміти задачу</strong><small>Функції, обмеження, інтерфейси, ризики та критерії результату.</small></div>
-          <div class="history-step"><span>02 / BUILD</span><strong>Побудувати архітектуру</strong><small>Розподіл функцій між механікою, електронікою, firmware та software.</small></div>
-          <div class="history-step"><span>03 / BRING-UP</span><strong>Зібрати прототип</strong><small>Підключення, діагностика, вимірювання та інтеграція модулів.</small></div>
-          <div class="history-step"><span>04 / VALIDATE</span><strong>Перевірити на практиці</strong><small>Реальне обладнання, граничні режими, стабільність і повторюваність.</small></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="case-studies">
-      <div class="wrap">
-        <div class="section-kicker">03 / CASE STUDY</div>
-        <div class="section-heading"><h2>DELTA CNC — власний full-stack R&D-проєкт.</h2><p>Поточний публічний приклад системного підходу DELTA R&D: автоматизація промислового швейного обладнання з окремим HMI, real-time контролером та синхронізованим керуванням XY-механікою.</p></div>
-        <div class="split-panel">
-          <div class="split-column">
-            <span class="panel-label">SYSTEM PATH</span>
-            <h3>Від UI до механіки</h3>
-            <ul><li>Raspberry Pi / Avalonia HMI</li><li>SPI V2 communication</li><li>STM32 real-time control</li><li>Planner / Motion / StepScheduler</li><li>STEP/DIR → XY-механіка</li></ul>
-          </div>
-          <div class="split-column accent-column">
-            <span class="panel-label">CURRENT STAGE</span>
-            <h3>Практична валідація</h3>
-            <ul><li>єдиний motion stack для JOG / TRACE / STITCH</li><li>синхронізація руху з положенням голки</li><li>базові STITCH-тести підтверджені</li><li>наступний етап — реальна вишивка та доведення ПЗ</li></ul>
-            <div class="hero-actions"><a class="btn btn-primary" href="/">DELTA CNC →</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section evidence-section" id="public-projects">
-      <div class="wrap">
-        <div class="section-kicker">04 / PUBLIC PROJECTS</div>
-        <div class="section-heading"><h2>Публічні розробки — у процесі підготовки.</h2><p>GitHub використовується як технічний контур DELTA R&D. У відкритий доступ поступово будуть додаватися вибрані проєкти, які можна показувати без конфіденційної інформації та які мають самостійну інженерну цінність.</p></div>
-        <div class="route-grid">
-          <div class="route-card accent-card"><span>PLANNED / EMBEDDED</span><h3>Firmware</h3><p>Відкриті embedded-проєкти, приклади архітектури, протоколів і real-time control.</p></div>
-          <div class="route-card"><span>PLANNED / HARDWARE</span><h3>Electronics & PCB</h3><p>Апаратні проєкти з документацією, схемами, PCB та результатами bring-up.</p></div>
-          <div class="route-card"><span>PLANNED / TOOLS</span><h3>Engineering Tools</h3><p>Утиліти, тестові стенди та інструменти для діагностики й системної інтеграції.</p></div>
-        </div>
-        <div class="hero-actions"><a class="btn btn-outline" href="https://github.com/RelSMayer" target="_blank" rel="noopener noreferrer">GitHub / RelSMayer ↗</a></div>
-      </div>
-    </section>
-
-    <section class="section" id="engineering-profile">
-      <div class="wrap">
-        <div class="section-kicker">05 / ENGINEERING PROFILE</div>
-        <div class="split-panel">
-          <div class="split-column">
-            <span class="panel-label">DELTA R&D / ENGINEERING</span>
-            <h3>Богдан Новіков</h3>
-            <p class="section-lead">R&D / Embedded Systems Architect</p>
-            <p class="muted">Системна розробка embedded-пристроїв: від концепції та механіки до електроніки, firmware, Linux/UI, інтеграції й перевірки на реальному обладнанні.</p>
-          </div>
-          <div class="split-column accent-column">
-            <span class="panel-label">ENGINEERING LINKS</span>
-            <h3>Профіль та публічні роботи</h3>
-            <ul><li>STM32 / embedded firmware</li><li>electronics / motion control</li><li>Linux / Raspberry Pi / Avalonia</li><li>system integration / reverse engineering</li></ul>
-            <div class="hero-actions"><a class="btn btn-outline" href="https://www.linkedin.com/in/relsmayer/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn btn-outline" href="https://github.com/RelSMayer" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="wrap contact-inner"><div><div class="section-kicker">06 / КОНТАКТИ</div><h2>Є інженерна задача без готового рішення?</h2></div><div class="contact-action"><p>Опишіть задачу, що вже існує на поточний момент, основні обмеження та бажаний результат. Це дасть достатній контекст для першої технічної оцінки.</p><a class="btn btn-primary" href="mailto:delta.professional.em@gmail.com">delta.professional.em@gmail.com</a></div></div>
-    </section>
+    <section class="page-hero"><div class="hero-grid"></div><div class="wrap page-hero-inner"><div><div class="eyebrow"><span class="dot"></span> DELTA / ENGINEERING R&D</div><h1>Складні інженерні задачі <span class="accent">від архітектури до працюючої системи.</span></h1><p class="hero-lead">DELTA R&D працює з embedded firmware, електронікою, motion control, Linux/Raspberry Pi, механікою та інтеграцією обладнання як з частинами одного продукту.</p><div class="hero-actions"><a class="btn btn-primary" href="#services">Напрями роботи</a><a class="btn btn-ghost" href="#contact">Обговорити задачу <span>→</span></a></div></div><div class="system-card compact-card"><div class="system-card-head"><span>R&D / SYSTEM APPROACH</span><span class="status"><i></i> ACTIVE</span></div><div class="architecture"><div class="node node-main"><span class="node-tag">01</span><strong>Задача та обмеження</strong><small>Вимоги / ризики / невідомі</small></div><div class="flow"><span></span><b>ARCHITECTURE</b><span></span></div><div class="node"><span class="node-tag">02</span><strong>Hardware + Firmware + Software</strong><small>Розробка як єдиної системи</small></div><div class="flow"><span></span><b>BRING-UP / TEST</b><span></span></div><div class="node node-machine"><span class="node-tag">03</span><strong>Працюючий прототип</strong><small>Інтеграція / вимірювання / валідація</small></div></div></div></div></section>
+    <section class="section" id="services"><div class="wrap"><div class="section-kicker">01 / НАПРЯМИ R&D</div><div class="section-heading"><h2>Повний інженерний тракт, а не окремі технології.</h2><p>Задача розглядається на рівні всієї системи: від вимог, механіки та електроніки до firmware, software, протоколів зв'язку, діагностики й перевірки на реальному обладнанні.</p></div><div class="cards"><article class="card"><div class="card-id">R&D 01</div><h3>Embedded Systems</h3><p>STM32, real-time control, протоколи, DMA/IRQ, діагностика та safety-логіка.</p></article><article class="card"><div class="card-id">R&D 02</div><h3>Electronics & PCB</h3><p>Архітектура електроніки, схеми, PCB, прототипування та hardware bring-up.</p></article><article class="card"><div class="card-id">R&D 03</div><h3>Motion & Automation</h3><p>Крокові приводи, planners, schedulers, синхронізація та керування механікою.</p></article><article class="card"><div class="card-id">R&D 04</div><h3>Reverse Engineering</h3><p>Legacy-системи, невідомі протоколи, діагностика та розробка функціональної заміни.</p></article><article class="card"><div class="card-id">R&D 05</div><h3>System Integration</h3><p>Linux, Raspberry Pi, UI, embedded-контролери, інтерфейси та запуск системи як єдиного виробу.</p></article><article class="card"><div class="card-id">R&D 06</div><h3>Engineering Consulting</h3><p>Feasibility, architecture review, технічні ризики, декомпозиція та планування R&D.</p></article></div></div></section>
+    <section class="section evidence-section" id="approach"><div class="wrap"><div class="section-kicker">02 / ПІДХІД</div><div class="section-heading"><h2>Результат — не код або плата окремо, а система, що працює.</h2><p>Hardware, firmware, software та механічна частина перевіряються разом. Це дозволяє знаходити проблеми на межах модулів, де найчастіше виникають помилки інтеграції.</p></div><div class="history-strip"><div class="history-step"><span>01 / DEFINE</span><strong>Зрозуміти задачу</strong><small>Функції, обмеження, інтерфейси, ризики та критерії результату.</small></div><div class="history-step"><span>02 / BUILD</span><strong>Побудувати архітектуру</strong><small>Розподіл функцій між механікою, електронікою, firmware та software.</small></div><div class="history-step"><span>03 / BRING-UP</span><strong>Зібрати прототип</strong><small>Підключення, діагностика, вимірювання та інтеграція модулів.</small></div><div class="history-step"><span>04 / VALIDATE</span><strong>Перевірити на практиці</strong><small>Реальне обладнання, граничні режими, стабільність і повторюваність.</small></div></div></div></section>
+    <section class="section" id="case-studies"><div class="wrap"><div class="section-kicker">03 / CASE STUDY</div><div class="section-heading"><h2>DELTA CNC — власний full-stack R&D-проєкт.</h2><p>Поточний публічний приклад системного підходу DELTA R&D: автоматизація промислового швейного обладнання з окремим HMI, real-time контролером та синхронізованим керуванням XY-механікою.</p></div><div class="split-panel"><div class="split-column"><span class="panel-label">SYSTEM PATH</span><h3>Від UI до механіки</h3><ul><li>Raspberry Pi / Avalonia HMI</li><li>SPI V2 communication</li><li>STM32 real-time control</li><li>Planner / Motion / StepScheduler</li><li>STEP/DIR → XY-механіка</li></ul></div><div class="split-column accent-column"><span class="panel-label">CURRENT STAGE</span><h3>Практична валідація</h3><ul><li>єдиний motion stack для JOG / TRACE / STITCH</li><li>синхронізація руху з положенням голки</li><li>базові STITCH-тести підтверджені</li><li>наступний етап — реальна вишивка та доведення ПЗ</li></ul><div class="hero-actions"><a class="btn btn-primary" href="/">DELTA CNC →</a></div></div></div></div></section>
+    <section class="section evidence-section" id="public-projects"><div class="wrap"><div class="section-kicker">04 / PUBLIC PROJECTS</div><div class="section-heading"><h2>Публічні розробки — у процесі підготовки.</h2><p>GitHub використовується як технічний контур DELTA R&D. У відкритий доступ поступово будуть додаватися вибрані проєкти, які можна показувати без конфіденційної інформації та які мають самостійну інженерну цінність.</p></div><div class="route-grid"><div class="route-card accent-card"><span>PLANNED / EMBEDDED</span><h3>Firmware</h3><p>Відкриті embedded-проєкти, приклади архітектури, протоколів і real-time control.</p></div><div class="route-card"><span>PLANNED / HARDWARE</span><h3>Electronics & PCB</h3><p>Апаратні проєкти з документацією, схемами, PCB та результатами bring-up.</p></div><div class="route-card"><span>PLANNED / TOOLS</span><h3>Engineering Tools</h3><p>Утиліти, тестові стенди та інструменти для діагностики й системної інтеграції.</p></div></div><div class="hero-actions"><a class="btn btn-outline" href="https://github.com/RelSMayer" target="_blank" rel="noopener noreferrer">GitHub / RelSMayer ↗</a></div></div></section>
+    <section class="section" id="engineering-profile"><div class="wrap"><div class="section-kicker">05 / ENGINEERING PROFILE</div><div class="split-panel"><div class="split-column"><span class="panel-label">DELTA R&D / ENGINEERING</span><h3>Богдан Новіков</h3><p class="section-lead">R&D / Embedded Systems Architect</p><p class="muted">Системна розробка embedded-пристроїв: від концепції та механіки до електроніки, firmware, Linux/UI, інтеграції й перевірки на реальному обладнанні.</p></div><div class="split-column accent-column"><span class="panel-label">ENGINEERING LINKS</span><h3>Профіль та публічні роботи</h3><ul><li>STM32 / embedded firmware</li><li>electronics / motion control</li><li>Linux / Raspberry Pi / Avalonia</li><li>system integration / reverse engineering</li></ul><div class="hero-actions"><a class="btn btn-outline" href="https://www.linkedin.com/in/relsmayer/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn btn-outline" href="https://github.com/RelSMayer" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></div></div></section>
+    <section class="contact" id="contact"><div class="wrap contact-inner"><div><div class="section-kicker">06 / КОНТАКТИ</div><h2>Є інженерна задача без готового рішення?</h2></div><div class="contact-action"><p>Опишіть задачу, що вже існує на поточний момент, основні обмеження та бажаний результат. Це дасть достатній контекст для першої технічної оцінки.</p><a class="btn btn-primary" href="mailto:delta.professional.em@gmail.com">delta.professional.em@gmail.com</a></div></div></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div class="footer-brand-block"><a class="brand" href="/"><span class="brand-mark">Δ</span><span>DELTA</span></a><p>Системи автоматизації вишивального обладнання.</p><span class="footer-since">З 1995 року</span></div>
-      <div class="footer-column"><strong>ПРОДУКТИ</strong><a href="/">DELTA CNC</a><a href="/support/#upgrade">Модернізація</a><a href="/support/">Підтримка</a></div>
-      <div class="footer-column"><strong>КОМПАНІЯ</strong><a href="/rnd/">DELTA R&D</a><a href="/about/">Про нас</a><a href="/delivery/">Доставка та оплата</a></div>
-      <div class="footer-column footer-contact"><strong>КОНТАКТИ</strong><span>Харків, Україна</span><a href="mailto:delta.professional.em@gmail.com">delta.professional.em@gmail.com</a></div>
-    </div>
-    <div class="wrap footer-bottom"><span>DELTA Professional · 1995–2026</span><span>© 2026 DELTA Professional</span></div>
-  </footer>
+  <footer class="site-footer"><div class="wrap footer-grid"><div class="footer-brand-block"><a class="brand" href="/"><span class="brand-mark">Δ</span><span>DELTA</span></a><p>Системи автоматизації промислового швейного та вишивального обладнання.</p><span class="footer-since">З 1995 року</span></div><div class="footer-column"><strong>ПРОДУКТИ</strong><a href="/">DELTA CNC</a><a href="/support/#upgrade">Модернізація</a><a href="/support/">Підтримка</a></div><div class="footer-column"><strong>КОМПАНІЯ</strong><a href="/rnd/">DELTA R&D</a><a href="/about/">Про нас</a><a href="/delivery/">Доставка та оплата</a></div><div class="footer-column footer-contact"><strong>КОНТАКТИ</strong><span>Харків, Україна</span><a href="mailto:delta.professional.em@gmail.com">delta.professional.em@gmail.com</a></div></div><div class="wrap footer-bottom"><span>DELTA Professional · 1995–2026</span><span>© 2026 DELTA Professional</span></div></footer>
 </body>
 </html>
