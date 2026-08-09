@@ -103,12 +103,120 @@
   color: #9cabb5;
 }
 
+.engineering-profile {
+  display: grid;
+  grid-template-columns: .72fr 1.28fr;
+  gap: 12px;
+  border: 1px solid var(--line-bright);
+  background: linear-gradient(135deg, rgba(255,122,26,.07), transparent 48%), #0b1014;
+}
+
+.engineering-profile-id {
+  padding: 30px;
+  border-right: 1px solid var(--line);
+}
+
+.engineering-profile-id .card-id {
+  display: block;
+  margin-bottom: 70px;
+}
+
+.engineering-profile-id h3 {
+  margin-bottom: 7px;
+  font-size: 30px;
+  letter-spacing: -.035em;
+}
+
+.engineering-profile-id p {
+  margin-bottom: 0;
+  color: var(--accent-2);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.engineering-profile-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.engineering-profile-body p {
+  max-width: 680px;
+  margin-bottom: 24px;
+  color: #9eacb6;
+}
+
+.engineering-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.engineering-tags span {
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  color: #81909a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-engineer {
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-engineer-copy p {
+  max-width: 720px;
+  color: #a3b0b9;
+  font-size: 17px;
+}
+
+.about-engineer-card {
+  padding: 28px;
+  border: 1px solid var(--line-bright);
+  background: #0b1014;
+}
+
+.about-engineer-card .card-id {
+  display: block;
+  margin-bottom: 64px;
+}
+
+.about-engineer-card h3 {
+  margin-bottom: 6px;
+  font-size: 28px;
+  letter-spacing: -.03em;
+}
+
+.about-engineer-card p {
+  margin-bottom: 26px;
+  color: var(--accent-2);
+  font-size: 13px;
+  font-weight: 800;
+}
+
 @media (max-width: 900px) {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .engineering-profile, .about-engineer { grid-template-columns: 1fr; }
+  .engineering-profile-id { border-right: 0; border-bottom: 1px solid var(--line); }
 }
 
 @media (max-width: 620px) {
   .footer-grid, .delivery-grid { grid-template-columns: 1fr; }
   .footer-grid { padding: 44px 0 34px; }
   .footer-bottom { flex-direction: column; gap: 6px; }
+  .engineering-profile-id .card-id, .about-engineer-card .card-id { margin-bottom: 42px; }
 }
