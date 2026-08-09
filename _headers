@@ -1,3 +1,7 @@
-# Active Visual v2 development: do not reuse stale browser assets.
+# Production cache baseline.
+# HTML/CSS/JS/brand assets are always revalidated; versioned media may be cached long-term.
 /*
-  Cache-Control: no-store
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
