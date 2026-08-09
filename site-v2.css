@@ -1,0 +1,114 @@
+.site-footer {
+  padding: 0;
+  color: #7d8b95;
+  background: #080b0e;
+  border-top: 1px solid var(--line);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: 48px;
+  padding: 58px 0 46px;
+}
+
+.footer-brand-block p {
+  max-width: 300px;
+  margin: 20px 0 8px;
+  color: #8d9ba5;
+  font-size: 14px;
+}
+
+.footer-since {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13px;
+}
+
+.footer-column strong {
+  margin-bottom: 8px;
+  color: #d7e0e6;
+  font-size: 10px;
+  letter-spacing: .14em;
+}
+
+.footer-column a { color: #8d9ba5; }
+.footer-column a:hover { color: #fff; }
+.footer-contact a { overflow-wrap: anywhere; }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 19px 0 24px;
+  border-top: 1px solid var(--line);
+  color: #5f6c75;
+  font-size: 11px;
+}
+
+.delivery-hero .page-hero-inner {
+  grid-template-columns: 1fr;
+  max-width: 900px;
+}
+
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.delivery-card {
+  min-height: 280px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, #0d1217, #090d10);
+}
+
+.delivery-card.accent-card {
+  border-color: rgba(255,122,26,.35);
+}
+
+.delivery-card .card-id {
+  display: block;
+  margin-bottom: 72px;
+}
+
+.delivery-card h2 {
+  margin-bottom: 14px;
+  font-size: 30px;
+  letter-spacing: -.03em;
+}
+
+.delivery-card p {
+  max-width: 520px;
+  margin-bottom: 0;
+  color: #93a2ac;
+}
+
+.delivery-note {
+  margin-top: 22px;
+  padding: 20px 22px;
+  border-left: 2px solid var(--accent);
+  background: rgba(255,122,26,.045);
+  color: #9cabb5;
+}
+
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+
+@media (max-width: 620px) {
+  .footer-grid, .delivery-grid { grid-template-columns: 1fr; }
+  .footer-grid { padding: 44px 0 34px; }
+  .footer-bottom { flex-direction: column; gap: 6px; }
+}
