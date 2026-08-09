@@ -5,10 +5,10 @@
 
 .brand {
   display: block;
-  width: 176px;
-  height: 44px;
-  min-height: 44px;
-  background: left center / contain no-repeat url('/assets/brand/logo/delta-professional.svg');
+  width: 184px;
+  height: 46px;
+  min-height: 46px;
+  background: left center / contain no-repeat url('/assets/brand/logo/delta-professional.v2.svg');
   line-height: 0;
 }
 
@@ -28,19 +28,19 @@
 }
 
 .footer-brand-block .brand {
-  width: 190px;
-  height: 48px;
+  width: 196px;
+  height: 49px;
 }
 
 @media (max-width: 620px) {
   .brand {
-    width: 154px;
-    height: 38px;
-    min-height: 38px;
+    width: 158px;
+    height: 40px;
+    min-height: 40px;
   }
 
   .footer-brand-block .brand {
-    width: 170px;
-    height: 42px;
+    width: 174px;
+    height: 43px;
   }
 }
