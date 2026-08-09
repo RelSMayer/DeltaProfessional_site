@@ -1,4 +1,4 @@
-/* DELTA brand layer — full vector wordmark + shared accent. */
+/* DELTA brand layer — approved full logo asset + shared accent. */
 :root {
   --brand-accent: #ff7618;
 }
@@ -8,11 +8,11 @@
   width: 184px;
   height: 46px;
   min-height: 46px;
-  background: left center / contain no-repeat url('/assets/brand/logo/delta-professional.v2.svg');
+  background: left center / contain no-repeat url('/assets/brand/logo/delta-professional.approved.v1.png');
   line-height: 0;
 }
 
-/* Keep semantic HTML, but render the brand as one stable SVG asset. */
+/* Keep semantic HTML, but render the brand as one approved raster asset. */
 .brand > .brand-mark,
 .brand > span:last-child {
   display: none;
