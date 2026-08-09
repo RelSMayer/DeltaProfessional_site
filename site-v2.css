@@ -4,54 +4,176 @@
   background: #080b0e;
   border-top: 1px solid var(--line);
 }
-.footer-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 48px; padding: 58px 0 46px; }
-.footer-brand-block p { max-width: 300px; margin: 20px 0 8px; color: #8d9ba5; font-size: 14px; }
-.footer-since { color: var(--accent); font-size: 11px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
-.footer-column { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; font-size: 13px; }
-.footer-column strong { margin-bottom: 8px; color: #d7e0e6; font-size: 10px; letter-spacing: .14em; }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: 48px;
+  padding: 58px 0 46px;
+}
+
+.footer-brand-block p {
+  max-width: 300px;
+  margin: 20px 0 8px;
+  color: #8d9ba5;
+  font-size: 14px;
+}
+
+.footer-since {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13px;
+}
+
+.footer-column strong {
+  margin-bottom: 8px;
+  color: #d7e0e6;
+  font-size: 10px;
+  letter-spacing: .14em;
+}
+
 .footer-column a { color: #8d9ba5; }
 .footer-column a:hover { color: #fff; }
 .footer-contact a { overflow-wrap: anywhere; }
-.footer-bottom { display: flex; justify-content: space-between; gap: 24px; padding: 19px 0 24px; border-top: 1px solid var(--line); color: #5f6c75; font-size: 11px; }
-.delivery-hero .page-hero-inner { grid-template-columns: 1fr; max-width: 900px; }
-.delivery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-.delivery-card { min-height: 280px; padding: 28px; border: 1px solid var(--line); background: linear-gradient(180deg, #0d1217, #090d10); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 19px 0 24px;
+  border-top: 1px solid var(--line);
+  color: #5f6c75;
+  font-size: 11px;
+}
+
+.delivery-hero .page-hero-inner {
+  grid-template-columns: 1fr;
+  max-width: 900px;
+}
+
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.delivery-card {
+  min-height: 280px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, #0d1217, #090d10);
+}
+
 .delivery-card.accent-card { border-color: rgba(255,122,26,.35); }
 .delivery-card .card-id { display: block; margin-bottom: 72px; }
 .delivery-card h2 { margin-bottom: 14px; font-size: 30px; letter-spacing: -.03em; }
 .delivery-card p { max-width: 520px; margin-bottom: 0; color: #93a2ac; }
-.delivery-note { margin-top: 22px; padding: 20px 22px; border-left: 2px solid var(--accent); background: rgba(255,122,26,.045); color: #9cabb5; }
 
-.integration-section { background: radial-gradient(circle at 20% 30%, rgba(255,122,26,.045), transparent 28rem); }
-.integration-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 54px; align-items: center; }
-.integration-figure { margin: 0; border: 1px solid var(--line-bright); background: #06090c; overflow: hidden; }
-.integration-figure img { display: block; width: 100%; height: auto; }
-.integration-figure figcaption { padding: 14px 16px 16px; border-top: 1px solid var(--line); color: #6f7f8a; font-size: 12px; }
-.integration-copy h2 { font-size: clamp(38px, 4vw, 58px); line-height: 1.04; letter-spacing: -.045em; }
-.integration-copy > p:not(.section-lead) { color: #95a4ae; }
-.component-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 52px; }
-.component-card { min-height: 210px; padding: 22px; border: 1px solid var(--line); background: #0b1014; }
-.component-card > span { color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: .13em; }
-.component-card h3 { margin: 50px 0 10px; font-size: 19px; line-height: 1.15; }
-.component-card p { margin: 0; color: #83939e; font-size: 13px; }
-.advantage-grid { grid-template-columns: repeat(4, 1fr); }
-.advantage-grid .route-card { min-height: 310px; }
-.automation-section { background: linear-gradient(180deg, rgba(255,255,255,.008), transparent); }
-.automation-list { max-width: 940px; }
-.history-more { margin-top: 26px; }
+.delivery-note {
+  margin-top: 22px;
+  padding: 20px 22px;
+  border-left: 2px solid var(--accent);
+  background: rgba(255,122,26,.045);
+  color: #9cabb5;
+}
+
+/* HOME: physical integration diagram */
+.integration-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(330px, .75fr);
+  gap: 52px;
+  align-items: center;
+}
+
+.integration-figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line-bright);
+  background-color: #080c10;
+  background-image: url("https://raw.githubusercontent.com/RelSMayer/DeltaProfessional_site/main/assets/delta-cnc-system-structure.webp");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.integration-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1672 / 941;
+  object-fit: contain;
+  opacity: 0;
+}
+
+.integration-figure figcaption {
+  padding: 14px 16px;
+  border-top: 1px solid var(--line);
+  background: #090d10;
+  color: #71808a;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.integration-copy h2 { max-width: 620px; }
+.integration-copy p { color: #9eacb6; }
+.integration-copy .hero-actions { margin-top: 28px; }
+
+.integration-parts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 46px;
+}
+
+.integration-part {
+  min-height: 190px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: #0b1014;
+}
+
+.integration-part span {
+  display: block;
+  margin-bottom: 46px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.integration-part h3 { margin-bottom: 10px; font-size: 20px; letter-spacing: -.02em; }
+.integration-part p { margin: 0; color: #81909a; font-size: 13px; }
+
+.integration-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 30px;
+}
+.integration-benefits .route-card { min-height: 250px; }
 
 @media (max-width: 1100px) {
-  .integration-grid { grid-template-columns: 1fr; }
-  .component-grid, .advantage-grid { grid-template-columns: 1fr 1fr; }
+  .integration-layout { grid-template-columns: 1fr; }
+  .integration-parts, .integration-benefits { grid-template-columns: repeat(2, 1fr); }
 }
+
 @media (max-width: 900px) {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
 }
+
 @media (max-width: 620px) {
-  .footer-grid, .delivery-grid, .component-grid, .advantage-grid { grid-template-columns: 1fr; }
+  .footer-grid, .delivery-grid, .integration-parts, .integration-benefits { grid-template-columns: 1fr; }
   .footer-grid { padding: 44px 0 34px; }
   .footer-bottom { flex-direction: column; gap: 6px; }
-  .integration-grid { gap: 30px; }
-  .component-card { min-height: auto; }
-  .component-card h3 { margin-top: 30px; }
+  .integration-layout { gap: 30px; }
+  .integration-part { min-height: 0; }
 }
