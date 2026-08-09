@@ -1,3 +1,5 @@
+@import url('/typography-v2.css?v=20260810-1');
+
 /* DELTA brand layer — approved transparent logo asset + shared accent. */
 :root {
   --brand-accent: #ff7618;
