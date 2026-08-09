@@ -1,0 +1,153 @@
+/* Typography Baseline Visual v2 — IBM Plex Sans Condensed. */
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  src: url('https://cdn.jsdelivr.net/npm/@ibm/plex-sans-condensed@2.0.0/fonts/complete/woff2/IBMPlexSansCondensed-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  src: url('https://cdn.jsdelivr.net/npm/@ibm/plex-sans-condensed@2.0.0/fonts/complete/woff2/IBMPlexSansCondensed-SemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  src: url('https://cdn.jsdelivr.net/npm/@ibm/plex-sans-condensed@2.0.0/fonts/complete/woff2/IBMPlexSansCondensed-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --font-ui: 'IBM Plex Sans Condensed', 'Arial Narrow', 'Segoe UI', sans-serif;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-ui);
+}
+
+body {
+  font-weight: 400;
+  letter-spacing: .002em;
+}
+
+h1,
+h2,
+h3,
+strong,
+.card h3,
+.route-card h3,
+.download-card h3,
+.delivery-card h2,
+.component-card h3,
+.history-step strong,
+.node strong,
+.panel-lines b {
+  font-family: var(--font-ui);
+  font-weight: 700;
+}
+
+h1 {
+  letter-spacing: -.025em;
+  line-height: .98;
+}
+
+.section h2,
+.contact h2,
+.integration-copy h2 {
+  letter-spacing: -.022em;
+  line-height: 1.01;
+}
+
+h3,
+.card h3,
+.route-card h3,
+.download-card h3,
+.component-card h3,
+.delivery-card h2,
+.history-step strong {
+  letter-spacing: -.012em;
+}
+
+.nav-links,
+.btn,
+.mobile-nav,
+.eyebrow,
+.section-kicker,
+.panel-label,
+.card-id,
+.node-tag,
+.system-card-head,
+.system-footer,
+.status,
+.route-card > span,
+.download-status,
+.component-card > span,
+.history-step > span,
+.footer-column strong,
+.footer-since {
+  font-family: var(--font-ui);
+  font-weight: 600;
+}
+
+.nav-links,
+.btn,
+.mobile-nav {
+  letter-spacing: .01em;
+}
+
+.eyebrow,
+.section-kicker,
+.panel-label,
+.card-id,
+.node-tag,
+.system-card-head,
+.system-footer,
+.status,
+.route-card > span,
+.download-status,
+.component-card > span,
+.history-step > span,
+.footer-column strong,
+.footer-since {
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+
+.hero-lead,
+.section-lead,
+.section-heading p,
+.card p,
+.route-card p,
+.download-card p,
+.component-card p,
+.history-step small,
+.node small,
+.contact-action p,
+.footer-column,
+.footer-brand-block p {
+  font-weight: 400;
+}
+
+@media (max-width: 620px) {
+  h1 {
+    letter-spacing: -.02em;
+    line-height: .99;
+  }
+
+  .section h2,
+  .contact h2,
+  .integration-copy h2 {
+    letter-spacing: -.018em;
+  }
+}
