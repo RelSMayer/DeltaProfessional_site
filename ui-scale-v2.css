@@ -1,0 +1,225 @@
+/* UI Scale Visual v2.2 — enlarge interface without inflating display headlines. */
+
+/* Header / navigation */
+.nav {
+  height: 86px;
+}
+
+.brand {
+  width: 205px;
+  height: 51px;
+  min-height: 51px;
+}
+
+.nav-links {
+  gap: 32px;
+  font-size: 15px;
+}
+
+.btn {
+  min-height: 50px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-size: 14px;
+}
+
+.btn-small {
+  min-height: 42px;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-size: 14px;
+}
+
+.nav-links a.active::after {
+  bottom: -32px;
+}
+
+/* Technical labels */
+.eyebrow,
+.section-kicker {
+  font-size: 12px;
+}
+
+.panel-label,
+.card-id,
+.node-tag,
+.route-card > span,
+.download-status,
+.component-card > span,
+.history-step > span,
+.footer-column strong,
+.footer-since {
+  font-size: 11px;
+}
+
+/* System / architecture cards */
+.system-card-head,
+.system-footer {
+  padding: 15px 18px;
+  font-size: 11px;
+}
+
+.architecture {
+  padding: 28px;
+}
+
+.node {
+  padding: 19px;
+  gap: 5px;
+}
+
+.node strong {
+  font-size: 17px;
+}
+
+.node small {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.node-tag {
+  font-size: 10px;
+}
+
+.flow {
+  height: 58px;
+}
+
+.flow b {
+  font-size: 10px;
+}
+
+.system-footer {
+  gap: 20px;
+}
+
+/* Body copy / secondary interface text */
+.hero-lead,
+.section-lead,
+.section-heading p,
+.integration-copy > p,
+.contact-action p,
+.about-copy {
+  font-size: 18px;
+}
+
+.feature-list p,
+.route-card p,
+.download-card p,
+.delivery-card p,
+.card p,
+.component-card p,
+.split-column li {
+  font-size: 15px;
+}
+
+.hero-meta strong {
+  font-size: 14px;
+}
+
+.hero-meta span {
+  font-size: 13px;
+}
+
+.panel-lines div {
+  font-size: 14px;
+}
+
+/* Card titles: slightly stronger, not headline-sized. */
+.card h3,
+.route-card h3,
+.download-card h3 {
+  font-size: 25px;
+}
+
+.component-card h3 {
+  font-size: 20px;
+}
+
+.history-step strong {
+  font-size: 21px;
+}
+
+/* Footer readability */
+.footer-brand-block .brand {
+  width: 210px;
+  height: 53px;
+}
+
+.footer-brand-block p,
+.footer-column {
+  font-size: 14px;
+}
+
+.footer-bottom {
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    height: 78px;
+  }
+
+  .brand {
+    width: 186px;
+    height: 47px;
+    min-height: 47px;
+  }
+
+  .hero-lead,
+  .section-lead,
+  .section-heading p,
+  .integration-copy > p,
+  .contact-action p,
+  .about-copy {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav {
+    height: 74px;
+  }
+
+  .brand {
+    width: 174px;
+    height: 44px;
+    min-height: 44px;
+  }
+
+  .mobile-nav summary {
+    font-size: 14px;
+  }
+
+  .btn,
+  .btn-small {
+    min-height: 48px;
+    font-size: 14px;
+  }
+
+  .eyebrow,
+  .section-kicker {
+    font-size: 11px;
+  }
+
+  .architecture {
+    padding: 22px;
+  }
+
+  .node {
+    padding: 17px;
+  }
+
+  .node strong {
+    font-size: 16px;
+  }
+
+  .node small {
+    font-size: 13px;
+  }
+
+  .footer-brand-block .brand {
+    width: 186px;
+    height: 47px;
+  }
+}
