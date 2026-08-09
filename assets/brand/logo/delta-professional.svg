@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 58" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 64" role="img" aria-labelledby="title desc">
   <title id="title">DELTA Professional</title>
-  <desc id="desc">DELTA Professional wordmark with orange legacy-inspired mark.</desc>
-  <g fill="none" stroke="#FF7618" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M27 10C41 10 50 18 50 30C50 42 41 49 28 49"/>
-    <path d="M8 49H30"/>
+  <desc id="desc">DELTA Professional full wordmark with orange legacy-inspired mark.</desc>
+  <g fill="none" stroke="#FF7618" stroke-width="8" stroke-linecap="square" stroke-linejoin="round">
+    <path d="M28 11C42 11 52 18 52 31C52 44 42 51 29 51"/>
+    <path d="M8 51H31"/>
   </g>
-  <text x="68" y="29" fill="#F5F6F5" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800" letter-spacing="1.4">DELTA</text>
-  <text x="69" y="45" fill="#A6ADB8" font-family="Arial, Helvetica, sans-serif" font-size="8.5" font-weight="600" letter-spacing="2.6">PROFESSIONAL</text>
+  <text x="72" y="31" fill="#F5F6F5" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="24" font-weight="900" letter-spacing="1.6">DELTA</text>
+  <text x="73" y="47" fill="#A6ADB8" font-family="Arial, Helvetica, sans-serif" font-size="8.2" font-weight="700" letter-spacing="2.9">PROFESSIONAL</text>
 </svg>
