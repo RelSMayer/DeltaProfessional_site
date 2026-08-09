@@ -1,0 +1,3 @@
+# During active development, always revalidate static assets before reuse.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
